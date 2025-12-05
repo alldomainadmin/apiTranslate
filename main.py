@@ -13,10 +13,11 @@ app = FastAPI()
 HF_TOKEN = os.getenv("HF_TOKEN")
 
 # InferenceClient-ийг шинэ endpoint-тэй үүсгэх
-def get_inference_client():
+def get_inference_client() :
     return InferenceClient(
         token=HF_TOKEN,
-        base_url="https://router.huggingface.co/huggingface"  # Шинэ endpoint
+        # base_url="https://router.huggingface.co/huggingface"
+        base_url="https://xxx-xxx.us-east-1.aws.endpoints.huggingface.cloud"
     )
 
 class TranslateRequest(BaseModel):
