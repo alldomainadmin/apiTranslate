@@ -13,6 +13,7 @@ source ~/Python/envAPI/bin/activate
 # pip3 install python-dotenv
 pip3 install fastapi uvicorn huggingface_hub pydantic python-dotenv
 pip3 install --upgrade pip
+pip3 install requests
 deactivate
 
 # ~/Python/envAPI/bin/python3.12 main.py
